@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+body {
+    margin: 0;
+    font-family: "Lato";
+    background-color: #212121;
+    color: #fff;
+}
+a,
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Carousel */
+.carousel .main {
+    border-radius: 10px;
+    border: 0.5px solid transparent; /* Add a border with the desired color */
+    overflow: hidden;
+}
+.custom-carousel-size {
+    width: 100%;
+    max-width: 100%;
+    height: 450px;
+    margin: auto;
+}
+
+.carousel-item > .row > .col-9 > img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.carousel-item > .row > .col-3 > .row > img {
+    width: 100%;
+    height: 225px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    width: auto;
+    max-width: 400px;
+    border-top-right-radius: 5px;
+}
+.carousel-caption h4 {
+    margin: 0 0 5px 0;
+    color: #fff;
+    padding-bottom: 8px;
+    font-weight: bold;
+    border-bottom: #aaa solid;
+    border-width: 0.5px;
+}
+.carousel-caption p {
+    padding: 0 3px 0 3px;
+    margin: 0;
+    color: #989898;
+}
+.carousel-caption [id*="title"] {
+    color: #fff;
+    padding-left: 2px;
+}
+
+/* Heading */
+.title {
+    padding: 25px 0 5px 0;
+    color: #fff;
+}
+.title h4 {
+    font-weight: bold;
+    margin-top: 2.5px;
+}
+.btn {
+    color: #fff;
+    border-color: #686868;
+}
+.dropdown-menu {
+    background-color: #222222;
+    color: #fff;
+    width: fit-content;
+}
+.dropdown-menu a {
+    color: #fff;
+}
+.dropdown-menu select {
+    border-color: #444;
+    background-color: #333;
+    color: #fff;
+}
+.dropdown-menu select:focus {
+    background-color: #444;
+    color: #fff;
+}
+.filter-set {
+    margin-top: 5px;
+}
+.filter-set a {
+    font-size: 15px;
+    margin: 0 0 0 20px;
+    padding-bottom: 5px;
+    color: #aaa;
+    transition: color 0.2s ease-in, border-bottom 0.2s ease-in;
+}
+.filter-set a:hover {
+    border-bottom: #aaa 0.3px solid;
+    color: #fff;
+}
+
+/* Items */
+.item-img {
+    border-radius: 2px;
+    height: 203px;
+}
+.item-description {
+    padding: 9px 0 0 3px;
+    color: #aaa;
+}
+.item-description h6 {
+    color: #cfcfcf;
+    font-weight: bold;
+    margin: 0 0 5px 0;
+    font-size: 18px;
+}
+.item-description .info {
+    font-size: 13px;
+    margin: 0;
+    padding-bottom: 5px;
+    border-bottom: #686868 0.1px dashed;
+}
+.item-description h4 {
+    color: #fff;
+    padding: 5px 0 0 0;
+    margin: 0;
+    font-weight: bold;
+}
+.item-description p {
+    font-size: 13px;
+    margin: 0 0 1px 0;
+}
+.item {
+    margin-bottom: 18px;
+}
+
+/* Text Holder */
+.text-holder {
+    background-color: #2d2d2d;
+    padding: 15px 20px 15px 20px;
+    border-radius: 8px;
+}
+
+/* Seller Information */
+.car-seller {
+    padding: 13px;
+    border: #454545 solid 0.2px;
+    border-radius: 10px;
+}
+.car-seller h4 {
+    height: 38.5px;
+    margin: 0 0 15px 0;
+    font-weight: bold;
+    border-bottom: #454545 solid 0.2px;
+}
+.car-seller .breadcrumb-item + .breadcrumb-item::before {
+    content: "-"; /* Biểu tượng ngăn cách */
+    color: white;
+    padding-right: 5px;
+}
+.car-seller .breadcrumb-item {
+    color: #afafaf;
+}
+.car-seller p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #858585;
+}

@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    background-color: #212121;
+}
+
+.header {
+    top: 0;
+}
+
+.header button {
+    margin: 10px 30px;
+    padding: 10px;
+    background-color: transparent;
+    border: #333333 solid 1px;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1320px;
+    container: layout / inline-size;
+    margin: 10px auto;
+}
+
+.h1 {
+    margin-bottom: 20px;
+}
+
+[class*='grid-'] {
+    display: grid !important;
+}
+
+.grid-2 {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.grid-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.grid-4 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.grid-5 {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.form-control {
+    padding: 12px 10px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+}
+
+.form-control input {
+    width: 100%;
+    padding-bottom: 5px;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 0.2px solid #494949;
+}
+
+.textarea {
+    width: 100%;
+    height: 50vh;
+    border: #858585 solid 0.2px;
+    margin: 10px 0;
+    outline: none;
+    padding: 7px 10px;
+    overflow-y: scroll;
+}
+
+.textarea::-webkit-scrollbar {
+    display: none;
+}
+
+.format-section {
+    padding: 10px 0;
+    width: 100%;
+    display: inline-flex;
+    border: #858585 solid 0.2px;
+    align-items: center;
+}
+
+.format-section .one,
+.format-section .two,
+.format-section .three,
+.format-section .four,
+.format-section .five {
+    padding: 0 20px;
+}
+
+.format-section .two .btn-format,
+.format-section .three .btn-format,
+.format-section .four .btn-format,
+.format-section .five .btn-format {
+    margin: 0 5px;
+}
+
+.format-section .active {
+    box-shadow: #858585 0 0 10px 1px;
+}
+
+.format-section .one .select-heading {
+    appearance: none;
+}
+
+.format-section .one .select-heading .option-heading {
+    color: black;
+}
+
+.format-section .one .select-heading,
+.format-section .two .btn-format,
+.format-section .three .btn-format,
+.format-section .four .btn-format,
+.format-section .five .btn-format {
+    background-color: transparent;
+    color: white;
+    border: #858585 solid 0.2px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.format-section .one .select-heading:hover,
+.format-section .two .btn-format:hover,
+.format-section .three .btn-format:hover,
+.format-section .four .btn-format:hover,
+.format-section .five .btn-format:hover {
+    box-shadow: #858585 0 0 10px 1px;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-submit {
+    background-color: transparent;
+    color: white;
+    border: #858585 solid 0.2px;
+    border-radius: 5px;
+    padding: 1rem 4rem;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    box-shadow: #858585 0 0 10px 1px;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.form-control select {
+    appearance: none;
+    border: none;
+    width: 100%;
+    padding: 5px 0;
+    border-bottom: 0.2px solid #494949;
+    background-color: transparent;
+    color: white;
+    outline: none;
+}
+
+.form-control option {
+    padding: 15px;
+    background-color: #212121;
+    border: #3F3F3F solid 0.2px;
+    outline: none;
+    color: white;
+}
+
+.form-control input[type="checkbox"] {
+    width: 20px;
+}
