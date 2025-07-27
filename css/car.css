@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+/* Car images */
+.car-img {
+    height: 580px;
+    border-radius: 7px;
+    border: 0.5px solid transparent;
+}
+.img-row {
+    height: 25%;
+}
+.mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Modal */
+.modal-content {
+    border-radius: 15px;
+    background-color: #212121;
+}
+.zoomable {
+    transition: transform 0.2s ease;
+    cursor: zoom-in;
+}
+.zoomable.zoomed {
+    cursor: grab;
+}
+
+.carousel-inner {
+    overflow: hidden;
+    position: relative;
+}
+.modal-dialog {
+    max-width: 950px;
+}
+
+/* Tags */
+.car-tag {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: #afafaf;
+}
+.car-tag a {
+    padding: 5px 6px 5px 6px;
+    color: #afafaf;
+    background-color: #2d2d2d;
+    border-radius: 5px;
+}
+.car-tag a:hover {
+    background-color: #4d4d4d;
+    color: #d2d1d1;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+.car-tag .breadcrumb-item + .breadcrumb-item::before {
+    content: ","; /* Biểu tượng ngăn cách */
+    color: #666666;
+    padding-right: 5px;
+}
+
+
+/* Information */
+.car-name {
+    font-weight: bold;
+}
+.car-info {
+    color: #afafaf;
+    padding-bottom: 15px; 
+    border-bottom: #858585 dashed 0.2px;
+}
+.car-price {
+    padding-top: 5px;
+    font-weight: bold;
+}
+.car-price span s{
+    font-size: 20px;
+    font-weight: 300;
+}
+.car-price-gap {
+    color: #afafaf;
+}
+.car-time {
+    font-size: 15px;
+    margin: 7px 0 0 0 ;
+    color: #afafaf;
+}
+
+/* Table */
+
+.table-car {
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #454545;
+}
+
+.table-car tr {
+    background-color: transparent;
+}
+
+.table-car td {
+    padding: 10px 15px;
+    border: 1px solid #454545;
+}
+
+.col-info {
+    width: 35%;
+}
+.car-rcm{
+    padding: 0 40px;
+}
+.car-rcm .carousel-control-prev,
+.car-rcm .carousel-control-next {
+    width: 5%; /* Giảm kích thước nút */
+}
+
+.car-rcm .carousel-control-prev {
+    left: -1%; /* Di chuyển nút prev ra ngoài bên trái */
+}
+
+.car-rcm .carousel-control-next {
+    right: -1%; /* Di chuyển nút next ra ngoài bên phải */
+}
+
+.col-2 .img-fluid {
+    height: 150px;
+}
+.img-fluid {
+    object-fit: cover; 
+}
+    

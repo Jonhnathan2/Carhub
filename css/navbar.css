@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+body {
+    background-color: #212121;
+    color: white;
+    font-family: 'Lato';
+}
+
+/* Navbar */
+
+.sticky-header {
+    background-color: #171717;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.sticky-header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.sticky-header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.sticky-header li {
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+}
+
+.sticky-header a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+#logo {
+    margin-right: 8px;
+}
+
+#item {
+    padding: 15px;
+}
+
+#item:hover {
+    background-color: #4ad493;
+    color: #333;
+    border-radius: 10px;
+    transition: background-color 0.2s;
+    transition-timing-function: ease-in;
+}
+
+/* Search bar container */
+.search-container {
+    position: relative;
+    width: 400px;
+    margin: 20px;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 10px 40px 10px 15px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #222;
+    color: white;
+}
+
+/* Placeholder text color */
+.search-container input::placeholder {
+    color: #aaa;
+}
+
+/* Font Awesome search icon */
+.search-container .fa-search {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #aaa;
+    pointer-events: none;
+    font-size: 20px;
+}
+.right-navbar {
+    display: inline-flex;
+    align-items: center;
+}
+.a-user i {
+    font-size: 28px;
+    color: #858585;
+    cursor: pointer;
+    margin: 0 10px;
+}
+/* Navbar dropdown */
+.drop {
+    position: relative;
+    display: inline-block;
+}
+.drop-toggle {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+.drop-content {
+    margin-top: 10px;
+    right: 0;
+    display: none;
+    color: white;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 100;
+    user-select: none;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.drop-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.drop-content a:hover {
+    background-color: #858585;
+    transition: all 0.2s ease-in-out;
+}
+.drop .show {
+    display: block;
+}
+.credit {
+    border-bottom: solid 1px #858585;
+    margin: 0;
+    padding: 12px 16px;
+}
